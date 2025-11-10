@@ -1,0 +1,47 @@
+body {
+    /* #A10000 with 30% opacity */ 
+    background: rgba(161, 0, 0, 0.3); 
+    padding-bottom: 64px;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+header {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1280px;
+    min-height: 500px;
+    border: 1px solid #FCFCFC; 
+    background: center url(../images/header.jpg);
+    background-size: cover;
+    
+}
+
+main {
+    background: #fff;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+main article {
+    padding: 48px 48px 64px;
+    gap: 24px;
+}
+
+h1 {
+    color: #A10000;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+h2 {
+    color: #000;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.intro {
+    background-color: #EBEBEB;
+}
