@@ -23,6 +23,7 @@ main {
     background: #fff;
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0;
 }
 
 main article {
@@ -34,14 +35,30 @@ h1 {
     color: #A10000;
     font-weight: 700;
     font-size: 28px;
+    padding: 0;
 }
 
 h2 {
     color: #000;
     font-weight: 700;
     font-size: 24px;
+    line-height: 33px;
+
 }
 
 .intro {
     background-color: #EBEBEB;
+    padding: 16px;
+}
+
+li {
+    line-height: 32px;
+}
+
+img.suggestion {
+
+    max-width: 580px;
+    min-width: 300px;
+    max-height: 467px;
+
 }
