@@ -27,7 +27,6 @@ main {
     padding: 48px 48px 64px;
 }
 
-
 h1 {
     color: #A10000;
     font-weight: 700;
@@ -60,12 +59,10 @@ li {
 }
 
 figure {
-    display: inline-block;
     margin: 0;
     max-width: 580px;
     width: 100%;
     height: 467px;
-    overflow: hidden;
 }
 
 figure img {
@@ -73,4 +70,12 @@ figure img {
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+/* Responsive padding for main on smaller screens (phones),
+ * Google seems to suggest 767px is "most phones"... */
+@media (max-width: 767px) {
+    main {
+        padding: 48px 16px;
+    }
 }
