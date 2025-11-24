@@ -2,25 +2,29 @@
 <html lang="sv">
     <head>
         <meta charset="UTF-8">
-        <title>Pannkakor - Test och Kartläggning</title>
+        <title>FE25ht Jim Nelin - Enkelt recept på pannkakor</title>
         <meta name="author" content="Jim Nelin">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" href="assets/css/stylesheet.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
     </head>
     <body>
+        <!-- Skip link for accessibility -->
+        <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
         <header>
             <img src="assets/images/pancakes-header.jpg" alt="Pannkakor med jordgubbar" class="header-image">
         </header>
-        <main>
+        
+        <main id="main-content">
             <article>
                 <header>
                     <h1>Enkelt recept på pannkakor</h1>
                 </header>
                 
-                <p class="lead"><b>
+                <p class="lead" id="intro">
                     Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept. 
-                </b></p>
+                </p>
 
                 <h2 id="ingredienser">Ingredienser</h2>
                 <p>För 4 portioner</p>
@@ -57,6 +61,10 @@
                     </figure>
                 </div>
 
+                <footer>
+                    <!-- Accessibility: Link to jump back to the top/main content -->
+                    <a href="#main-content" class="skip-link">Tillbaka till början</a>
+                </footer>
             </article>
         </main>
     </body>

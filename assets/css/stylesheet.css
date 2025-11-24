@@ -77,6 +77,18 @@ figure img {
     object-position: center;
 }
 
+/* Accessibility: Skip link, move it off-screen when not focused */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    overflow: hidden;
+}       
+
+.skip-link:focus {
+    position: static; /* Bring it back into view */
+}
+
 /* Responsive padding for main on smaller screens (phones),
  * Google seems to suggest 767px is "most phones"... */
 @media (max-width: 767px) {
