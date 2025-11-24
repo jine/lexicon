@@ -8,15 +8,15 @@ body {
     font-size: 16px;
 }
 
-header {
+.header-image {
     box-sizing: border-box;
     margin: 0 auto;
-    max-width: 1280px;
-    min-height: 500px;
-    border: 1px solid #FCFCFC; 
-    background: center url(../images/header.jpg);
-    background-size: cover;
-    
+    height: 500px; /* Fixed height for header image */
+    width: 100%; /* Note to self: This makes the image responsive */
+    max-width: 1280px; /* Limit the max width to match main content */
+    border: 1px solid #FCFCFC;
+    object-fit: cover; /* Note to self, from Robert - Cover the area, crop if needed, keep the center visible */
+    display: block;
 }
 
 main {
@@ -39,13 +39,17 @@ h1 {
 h2 {
     color: #000;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 24px; /* Slightly smaller than h1 for hierarchy */
     line-height: 33px;
 }
 
 .lead {
     background-color: #EBEBEB;
     padding: 16px;
+}
+
+.lead b {
+    font-weight: normal;
 }
 
 li {
