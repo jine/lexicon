@@ -48,6 +48,7 @@ h2 {
     padding: 16px;
 }
 
+/* b is used to denote importance/semanticly, not for bolding */
 .lead b {
     font-weight: normal;
 }
