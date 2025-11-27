@@ -71,7 +71,6 @@ header {
 }
 
 .suggestions-grid figure {
-    max-width: 580px;
     width: 100%;
     height: 500px;
     margin: 0;
@@ -84,6 +83,24 @@ header {
     height: 100%;
 }
 
+.nutrition-table {
+    width: 100%;
+    max-width: 380px; /* same as one image */
+}
+
+.nutrition-table th {
+    padding: 8px 0;
+}
+
+.nutrition-table h2 {
+    text-align: left;
+    margin: 0;
+    padding: 8px 0 16px;
+}
+.nutrition-table caption,
+.nutrition-table thead {
+    text-align: left;
+}
 /*
 I want to add :hover to suggestion images, to CSS3 transform the width of them slighly on hover.
 But i'll wait until next week, keeping this as a note to self! :)
