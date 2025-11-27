@@ -15,6 +15,11 @@ footer {
     padding: 1rem; /* =16px */
 }
 
+header {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 .header-image {
     display: block;
     box-sizing: border-box;
