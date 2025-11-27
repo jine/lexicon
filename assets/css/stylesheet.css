@@ -79,6 +79,11 @@ footer {
     height: 100%;
 }
 
+/*
+I want to add :hover to suggestion images, to CSS3 transform the width of them slighly on hover.
+But i'll wait until next week, keeping this as a note to self! :)
+*/
+
 .suggestions-grid figcaption {
     font-size: 0.8rem; /* =13px */
 }
