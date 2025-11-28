@@ -1,11 +1,10 @@
-
 body {
     /* #A10000 with 30% opacity equals ... */ 
-    background: rgba(161, 0, 0, 0.3); 
+    background: rgba(161, 0, 0, 0.3); /* Light red, with some opacity */
     font-family: "Open Sans", sans-serif; /* Included from Google Fonts */
     font-weight: 400;
-    font-size: 1rem; /* actually the default, 16px is 1em (root, <html>-em = rem) */
-    line-height: 1.6; /* WCAG AAA: Improves readability */
+    font-size: 1rem; /* default, 16px is 1rem (r = root <html>-em) */
+    line-height: 1.6; /* AI-SUGGESTION: WCAG AAA: Improves readability */
     padding-bottom: 4rem; /* =64px */
     margin: 0; /* Reset margin */
 }
@@ -24,6 +23,11 @@ footer {
     margin: 0 auto;
     padding: 1rem; /* =16px */
 }
+
+/* Accessibility: Change font color and tab users 
+footer a, body>header>a {
+    color: rgba(0, 255, 255, 1);      Why it works: Strong contrast with red and easy to distinguish for color-blind users
+}*/
 
 header {
     max-width: 1280px;
