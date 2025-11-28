@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>FE25ht Jim Nelin - Enkelt recept på pannkakor</title>
         <meta name="author" content="Jim Nelin">
+        <meta name="description" content="Receptsida, övningsuppgift">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" href="assets/css/stylesheet.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
@@ -13,6 +14,7 @@
             <!-- Accessibility: Visible for screen reader only -->
             <a href="#main-content" class="sr-only">Hoppa till innehåll</a>
 
+            
             <img src="assets/images/pancakes-header.jpg" alt="Pannkakor med jordgubbar" class="header-image">
         </header>
 
@@ -27,72 +29,80 @@
                     </p>
                 </header>
 
-                <table class="nutrition-table">
-                    <caption><h2>Näringsinnehåll</h2> 100 gram motsvarar ca 2 pannkakor</caption>
+                <section aria-labelledby="nutritioninfo">
+                    <table class="nutrition-table">
+                        <caption><h2 id="nutritioninfo">Näringsinnehåll</h2> 100 gram motsvarar ca 2 pannkakor</caption>
 
-                    <thead>
-                        <tr>
-                            <th role="columnheader">Näringsämne</th>
-                            <th role="columnheader">Per 100 g</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th role="rowheader">Energi</th>
-                            <td role="cell">1055 KJ / 252 kCal</td>
-                        </tr>
-                        <tr>
-                            <th role="rowheader">Protein</th>
-                            <td role="cell">7 g</td>
-                        </tr>
-                        <tr>
-                            <th role="rowheader">Kolhydrater</th>
-                            <td role="cell">22 g</td>
-                        </tr>
-                        <tr>
-                            <th role="rowheader">Fett</th>
-                            <td role="cell">15 g</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h2>Ingredienser</h2>
-                <p>För 4 portioner</p>
+                        <thead>
+                            <tr>
+                                <th role="columnheader">Näringsämne</th>
+                                <th role="columnheader">Per 100 g</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th role="rowheader">Energi</th>
+                                <td role="cell">1055 KJ / 252 kCal</td>
+                            </tr>
+                            <tr>
+                                <th role="rowheader">Protein</th>
+                                <td role="cell">7 g</td>
+                            </tr>
+                            <tr>
+                                <th role="rowheader">Kolhydrater</th>
+                                <td role="cell">22 g</td>
+                            </tr>
+                            <tr>
+                                <th role="rowheader">Fett</th>
+                                <td role="cell">15 g</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
                 
-                <ul>
-                    <li>2 1/2 dl vetemjöl</li>
-                    <li>1/2 tsk salt</li>
-                    <li>6 dl mjölk</li>
-                    <li>3 ägg</li>
-                    <li>smör (till stekning)</li>
-                    <li>sylt, bär eller frukt till servering</li>
-                </ul>
-                
-                <h2>Så här gör du</h2>
-                <ol>
-                    <li>Blanda mjöl och salt i en bunke.</li>
-                    <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
-                    <li>Vispa i resten av mjölken och äggen.</li>
-                    <li>Låt smeten vila ca 10 minuter.</li>
-                    <li>Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek- eller pannkakspanna.</li>
-                    <li>Servera med sylt, bär eller frukt</li>
-                </ol>
+                <section aria-labelledby="Ingredienser">
+                    <h2 id="Ingredienser">Ingredienser</h2>
+                    <p>För 4 portioner</p>
 
-                <h2>Serveringsförslag</h2>
-                <div class="suggestions-grid">
-                    <figure>
-                        <img src="assets/images/serving-suggestion1.jpg" alt="Pannkakor utan tillbehör">
-                        <figcaption>Serveringsförslag 1</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="assets/images/serving-suggestion2.jpg" alt="Pannkakor med apelsin, nötter och grädde">
-                        <figcaption>Serveringsförslag 2</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="assets/images/pancakes-header.jpg" alt="Pannkakor med jordgubbar">
-                        <figcaption>Serveringsförslag 3</figcaption>
-                    </figure>
-                </div>
+                    <ul>
+                        <li>2 1/2 dl vetemjöl</li>
+                        <li>1/2 tsk salt</li>
+                        <li>6 dl mjölk</li>
+                        <li>3 ägg</li>
+                        <li>smör (till stekning)</li>
+                        <li>sylt, bär eller frukt till servering</li>
+                    </ul>
+                </section>
+                
+                <section aria-labelledby="howto">
+                    <h2 id="howto">Så här gör du</h2>
+                    <ol>
+                        <li>Blanda mjöl och salt i en bunke.</li>
+                        <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
+                        <li>Vispa i resten av mjölken och äggen.</li>
+                        <li>Låt smeten vila ca 10 minuter.</li>
+                        <li>Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek- eller pannkakspanna.</li>
+                        <li>Servera med sylt, bär eller frukt</li>
+                    </ol>
+                </section>
+                
+                <section aria-labelledby="suggestions">
+                    <h2 id="suggestions">Serveringsförslag</h2>
+                    <div class="suggestions-grid">
+                        <figure>
+                            <img src="assets/images/serving-suggestion1.jpg" alt="Pannkakor utan tillbehör">
+                            <figcaption>Serveringsförslag 1</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/images/serving-suggestion2.jpg" alt="Pannkakor med apelsin, nötter och grädde">
+                            <figcaption>Serveringsförslag 2</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/images/pancakes-header.jpg" alt="Pannkakor med jordgubbar">
+                            <figcaption>Serveringsförslag 3</figcaption>
+                        </figure>
+                    </div>
+                </section>
             </article>
         </main>
 
