@@ -9,10 +9,20 @@ body {
     margin: 0; /* Reset margin */
 }
 
+/*
+AI-SUGGESTION: Accessibility: Focus Indicator 
+AI-SUGGESTION: Ensures keyboard users can see where they are.
+*/
+:focus-visible {
+    outline: 3px solid #A10000;
+    outline-offset: 2px;
+}
+
 footer {
     max-width: 1280px;
     margin: 0 auto;
     padding: 1rem; /* =16px */
+    background-color: #fff; /* AI-SUGGESTION: Ensure contrast for footer content */
 }
 
 header {

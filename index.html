@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
     </head>
     <body>
-        <!-- Maybe i should actually move this INSIDE main... Lets refactor this later -->
+        <!-- Maybe i should actually move this INSIDE main... Lets refactor this later  -->
         <header>
             <!-- Accessibility: Visible for screen reader only -->
             <a href="#main-content" class="sr-only">Hoppa till innehåll</a>
@@ -18,8 +18,12 @@
             <img src="assets/images/pancakes-header.jpg" alt="Pannkakor med jordgubbar" class="header-image">
         </header>
 
-        <!-- Note to self: tabindex="-1" disables tab-navigation to the main content/container -->
-        <main id="main-content">
+        <!-- 
+            Ai-SUGGESTION: Tabindex - Without it, clicking "Hoppa till innehåll" (Skip to content)
+            might scroll the page visually, but the keyboard focus would remain at the top.
+            Now, focus is programmatically moved to the main content, allowing users to immediately start interacting with the page content.
+        -->
+        <main id="main-content" tabindex="-1">
             <article>
 
                 <header>
