@@ -9,9 +9,6 @@
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/stylesheet.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
-
-        <!-- Tailwind CSS CDN (including Preflight for reset purposes) -->
-        <!--<link href="https://cdn.tailwindcss.com" rel="stylesheet">-->
     </head>
     <body>
         <!-- Maybe i should actually move this INSIDE main... Lets refactor this later  -->
@@ -20,7 +17,7 @@
             <a href="#main-content" class="sr-only">Hoppa till innehåll</a>
 
             <!-- AI-SUGGESTION: WCAG: Decorative image, empty alt attribute to reduce noise -->
-            <img src="assets/images/pancakes-header.jpg" alt="" class="header-image">
+            <img src="assets/images/pancakes-header.jpg" alt="">
         </header>
 
         <!-- 
@@ -28,7 +25,7 @@
             might scroll the page visually, but the keyboard focus would remain at the top.
             Now, focus is programmatically moved to the main content, allowing users to immediately start interacting with the page content.
         -->
-        <main id="main-content" tabindex="-1">
+        <main class="main-content" tabindex="-1">
             <article>
 
                 <header>
@@ -101,7 +98,6 @@
                         <figcaption><h2 id="suggestions">Serveringsförslag</h2></figcaption>
                         <img src="assets/images/serving-suggestion1.jpg" alt="Pannkakor utan tillbehör">
                         <img src="assets/images/serving-suggestion2.jpg" alt="Pannkakor med apelsin, nötter och grädde">
-                        <img src="assets/images/pancakes-header.jpg" alt="Pannkakor med jordgubbar">
                     </figure>
                 </section>
             </article>
