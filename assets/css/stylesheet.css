@@ -10,8 +10,9 @@
     --font-weight: 400; /* normal */
     --line-height: 1.6;
     --max-width: 980px;
-    --img-width: calc(var(--max-width) / 3); /* for suggestions grid */
-}
+
+    /* i cant do math atm, this should be (max-width/img count)-gap+padding&margin? RIGHT? divide by 3 also works */
+    --img-width: calc(var(--max-width) / 3);  /* this isnt accurate, but we're using auto-fit, so it will autoadjust! */
 
 body {
     background:  var(--primary-color);
