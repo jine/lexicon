@@ -3,7 +3,7 @@
     HSL hue, saturation, and lightness.
     HSLA HSL with alpha channel (opacity)
     */
-    --primary-color: hsl(135, 100%, 76%);
+    --primary-color: hsl(224, 100%, 84%);
     --off-white-color: hsl(0, 0%, 95%);
     --font-fam: "Open Sans", sans-serif;
     --font-size: 1rem; /* default, 16px is 1rem */
@@ -13,6 +13,8 @@
 
     /* i cant do math atm, this should be (max-width/img count)-gap+padding&margin? RIGHT? divide by 3 also works */
     --img-width: calc(var(--max-width) / 3);  /* this isnt accurate, but we're using auto-fit, so it will autoadjust! */
+
+}
 
 body {
     background:  var(--primary-color);
