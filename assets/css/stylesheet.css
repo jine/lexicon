@@ -61,7 +61,7 @@ header:first-of-type img:first-of-type {
     padding: 3rem 3rem 4rem; /* =48px 48px 64px */
     
     h1 {
-        color: color-mix(in srgb, var(--primary-color) 50%, black);
+        color: color-mix(in srgb, var(--primary-color) 25%, black);
         font-weight: calc(var(--font-weight) * 1.75);
         font-size: calc(var(--font-size) * 1.75);
         padding: 0;
