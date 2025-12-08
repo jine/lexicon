@@ -2,23 +2,32 @@
 <html lang="sv">
     <head>
         <meta charset="UTF-8">
-        <title>FE25ht Jim Nelin - Enkelt recept på pannkakor</title>
+        <title>Lorem Ipsum - Dolor sit amet</title>
         <meta name="author" content="Jim Nelin">
-        <meta name="description" content="Receptsida, övningsuppgift">
+        <meta name="description" content="Lorem ipsum dolor sit amet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/stylesheet.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     </head>
     <body>
-        <!-- Maybe i should actually move this INSIDE main... Lets refactor this later  -->
+        <!-- Navbar at top -->
         <header>
-            <!-- Accessibility: Visible for screen reader only -->
-            <a href="#main-content" class="sr-only">Hoppa till innehåll</a>
-
-            <!-- AI-SUGGESTION: WCAG: Decorative image, empty alt attribute to reduce noise -->
-            <img src="assets/images/pancakes-header.jpg" alt="">
+            <h2>Lorem Ipsum <span>Dolor</span> sit amet</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Impsum</a></li>
+                    <li><a href="#">Dolar</a></li>
+                    <li><a href="#">Sit amet</a></li>
+                </ul>
+            </nav>
         </header>
+
 
         <!-- 
             Ai-SUGGESTION: WHY Tabindex - Without it, clicking "Hoppa till innehåll" (Skip to content)
@@ -26,78 +35,88 @@
             Now, focus is programmatically moved to the main content, allowing users to immediately start interacting with the page content.
         -->
         <main class="main-content" tabindex="-1">
+            <!-- -->
+            <header>
+                <!-- Accessibility: Visible for screen reader only -->
+                <a href="#main-content" class="sr-only">Hoppa till innehåll</a>
+                <!-- AI-SUGGESTION: WCAG: Decorative image, empty alt attribute to reduce noise -->
+                <img src="https://picsum.photos/seed/header/1920/1080" alt="">
+            </header>
+
             <article>
 
                 <header>
-                    <h1>Enkelt recept på pannkakor</h1>
+                    <h1>Lorem Ipsum Dolor</h1>
                 
                     <p class="lead">
-                        Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     </p>
                 </header>
+                
+                <section aria-labelledby="ingridients">
+                    <h2 id="ingridients">Lorem Ipsum</h2>
+                    <p>Lorem ipsum</p>
+
+                    <ul>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Sit amet consectetur</li>
+                        <li>Adipiscing elit</li>
+                        <li>Sed do eiusmod</li>
+                        <li>Tempor incididunt</li>
+                        <li>Ut labore et dolore</li>
+                    </ul>
+                </section>
+                
+                <section aria-labelledby="howto">
+                    <h2 id="howto">Lorem Ipsum</h2>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+                        <li>Nisi ut aliquip ex ea commodo consequat.</li>
+                        <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</li>
+                        <li>Excepteur sint occaecat cupidatat non proident.</li>
+                    </ol>
+                </section>
 
                 <section aria-labelledby="nutritioninfo">
                     <table class="nutrition-table">
-                        <caption><h2 id="nutritioninfo">Näringsinnehåll</h2> 100 gram motsvarar ca 2 pannkakor</caption>
+                        <caption><h2 id="nutritioninfo">Lorem Ipsum</h2> Lorem ipsum dolor sit amet</caption>
 
                         <thead>
                             <tr>
-                                <th scope="col">Näringsämne</th>
-                                <th scope="col">Per 100 g</th>
+                                <th scope="col">Lorem</th>
+                                <th scope="col">Ipsum</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">Energi</th>
-                                <td>1055 KJ / 252 kCal</td>
+                                <th scope="row">Lorem</th>
+                                <td>100</td>
                             </tr>
                             <tr>
-                                <th scope="row">Protein</th>
-                                <td>7 g</td>
+                                <th scope="row">Ipsum</th>
+                                <td>200</td>
                             </tr>
                             <tr>
-                                <th scope="row">Kolhydrater</th>
-                                <td>22 g</td>
+                                <th scope="row">Dolor</th>
+                                <td>300</td>
                             </tr>
                             <tr>
-                                <th scope="row">Fett</th>
-                                <td>15 g</td>
+                                <th scope="row">Sit</th>
+                                <td>400</td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
                 
-                <section aria-labelledby="ingridients">
-                    <h2 id="ingridients">Ingredienser</h2>
-                    <p>För 4 portioner</p>
-
-                    <ul>
-                        <li>2 1/2 dl vetemjöl</li>
-                        <li>1/2 tsk salt</li>
-                        <li>6 dl mjölk</li>
-                        <li>3 ägg</li>
-                        <li>smör (till stekning)</li>
-                        <li>sylt, bär eller frukt till servering</li>
-                    </ul>
-                </section>
-                
-                <section aria-labelledby="howto">
-                    <h2 id="howto">Så här gör du</h2>
-                    <ol>
-                        <li>Blanda mjöl och salt i en bunke.</li>
-                        <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
-                        <li>Vispa i resten av mjölken och äggen.</li>
-                        <li>Låt smeten vila ca 10 minuter.</li>
-                        <li>Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek- eller pannkakspanna.</li>
-                        <li>Servera med sylt, bär eller frukt</li>
-                    </ol>
-                </section>
-                
                 <section aria-labelledby="suggestions">
                     <figure class="suggestions-grid">
-                        <figcaption><h2 id="suggestions">Serveringsförslag</h2></figcaption>
-                        <img src="assets/images/serving-suggestion1.jpg" alt="Pannkakor utan tillbehör">
-                        <img src="assets/images/serving-suggestion2.jpg" alt="Pannkakor med apelsin, nötter och grädde">
+                        <figcaption><h2 id="suggestions">Lorem Ipsum</h2></figcaption>
+                        <img src="https://picsum.photos/seed/image1/800/600" alt="Lorem Ipsum">
+                        <img src="https://picsum.photos/seed/image2/800/600" alt="Dolor Sit Amet">
+                        <img src="https://picsum.photos/seed/image3/800/600" alt="Lorem Ipsum">
+                        <img src="https://picsum.photos/seed/image4/800/600" alt="Dolor Sit Amet">
                     </figure>
                 </section>
             </article>

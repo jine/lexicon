@@ -5,9 +5,9 @@
     */
     --primary-color: hsl(15, 82%, 47%);
     --off-white-color: hsl(0, 0%, 100%);
-    --font-fam: "Open Sans", sans-serif;
+    --font-fam: "Roboto", sans-serif;
     --font-size: 1rem; /* default, 16px is 1rem */
-    --font-weight: 100; /* normal */
+    --font-weight: 400; /* normal */
     --line-height: 1.6;
     --max-width: 900px;
 
