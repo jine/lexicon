@@ -3,13 +3,13 @@
     HSL hue, saturation, and lightness.
     HSLA HSL with alpha channel (opacity)
     */
-    --primary-color: hsl(15, 82%, 47%);
+    --primary-color: hsla(46, 100%, 50%, 0.918);
     --off-white-color: hsl(0, 0%, 100%);
     --font-fam: "Roboto", sans-serif;
     --font-size: 1rem; /* default, 16px is 1rem */
     --font-weight: 400; /* normal */
     --line-height: 1.6;
-    --max-width: 900px;
+    --max-width: 1200px;
 
     /* i cant do math atm, this should be (max-width/img count)-gap+padding&margin? RIGHT? divide by 3 also works */
     --img-width: calc(var(--max-width) / 3);  /* this isnt accurate, but we're using auto-fit, so it will autoadjust! */
@@ -43,9 +43,24 @@ header {
     }
 }
 
+.navbar {
+    background: red;
+    display: flex;
+
+    li {
+        list-style:  none;
+        background: gray;
+        padding-inline: 10px;
+    }
+
+    ul {
+        display: flex;
+    }
+}
+
+
 /* first header, first image header */
-/* totally unnecessary SPECIFICIIIITY, but whatever */
-header:first-of-type img:first-of-type {
+.main-image {
     display: block;
     box-sizing: border-box;
     margin: 0 auto; /* Center the header image */
@@ -55,6 +70,12 @@ header:first-of-type img:first-of-type {
     border: 1px solid var(--off-white-color);
     object-fit: cover; /* Note to self: Robert - Key to cover the area, crop if needed, keep the center visible */
 }
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /* main main-content, no more ids due to specificity, avoid id styling */
 .main-content {
