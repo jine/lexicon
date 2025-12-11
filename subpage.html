@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <title>FE25ht - Jim Nelin | Space Exploration - The Final Frontier</title>
+        <meta name="author" content="Jim Nelin">
+        <meta name="description" content="Explore the wonders of the universe, from our solar system to distant galaxies.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/stylesheet.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- Navbar at top -->
+        <header class="flex-container">
+            <!--- Logo -->
+            <h2>Jim <span>FE25ht</span> Nelin</h2>
+
+            <nav class="flex-container">
+                <ul role="list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Missions</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="btn">En knapp i flexboxen</button>
+        </header>
+
+        <main class="main-content">
+            <!-- -->
+            <header>
+                <!-- Accessibility: Visible for screen reader only -->
+                <a href="#main-content" class="sr-only">Hoppa till innehåll</a>
+                <!-- AI-SUGGESTION: WCAG: Decorative image, empty alt attribute to reduce noise -->
+                <img class="main-image" src="https://picsum.photos/seed/technology7/1920/1080" alt="">
+            </header>
+
+            <article>
+
+                <header>
+                    <h1>Journey to the Stars</h1>
+                
+                    <p class="lead">
+                        Space exploration has always captivated the human imagination. From the first steps on the Moon to the robotic rovers on Mars.
+                    </p>
+                </header>
+                
+                <section aria-labelledby="nutritioninfo">
+                    <table class="nutrition-table">
+                        <caption><h2 id="nutritioninfo">Planetary Data</h2> Comparison of terrestrial planets</caption>
+
+                        <thead>
+                            <tr>
+                                <th scope="col">Planet</th>
+                                <th scope="col">Diameter (km)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Mercury</th>
+                                <td>4,879</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Venus</th>
+                                <td>12,104</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Earth</th>
+                                <td>12,742</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mars</th>
+                                <td>6,779</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                
+                <section aria-labelledby="images-title">
+                    <figure class="image-grid">
+                        <figcaption><h2 id="images-title">Galactic Gallery</h2></figcaption>
+                        <img src="https://picsum.photos/seed/asd/800/600" alt="Nebula cloud">
+                        <img src="https://picsum.photos/seed/dfg/800/600" alt="Distant galaxy">
+                    </figure>
+                </section>
+            </article>
+        </main>
+
+        <footer>
+            <!-- Accessibility: Visible for screen reader only -->
+            <a href="#main-content" class="sr-only">Tillbaka till början</a>
+        </footer>
+    </body>
+</html>
