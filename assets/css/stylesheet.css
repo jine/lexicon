@@ -52,7 +52,7 @@ footer {
 .flex-container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background: var(--off-white-color);
     height: 4rem;
     
