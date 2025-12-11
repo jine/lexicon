@@ -3,7 +3,7 @@
     HSL hue, saturation, and lightness.
     HSLA HSL with alpha channel (opacity)
     */
-    --primary-color: hsla(98, 89%, 35%, 0.918);
+    --primary-color: hsla(135, 87%, 33%, 0.918);
     --off-white-color: hsl(0, 0%, 100%);
     --line-height: 1.6;
 
@@ -55,18 +55,22 @@ footer {
 /* flex container for nav */
 .flex-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* space between items */
+    align-items: center; /* vertically center items */
     background: var(--off-white-color);
+    height: 4rem;
     
     h2 {
         margin: 0;
-        padding: 0.5rem 1rem;
-        color: var(--primary-color);
+        padding: 0 1rem;
         font-size: 1.5rem;
-    }
-    
-    h2>span {
-        font-weight: bold;
+        
+        color: color-mix(in srgb, var(--primary-color), black 20%);
+
+        >span {
+            font-weight: bold;
+            color: color-mix(in srgb, var(--primary-color), black 40%);
+        }
     }
 
     ul {
@@ -84,13 +88,15 @@ footer {
     }
 
     .btn {
-        background: var(--off-white-color);
-        color: var(--primary-color);
+        background: color-mix(in srgb, var(--primary-color), white 80%);
+        color: color-mix(in srgb, var(--primary-color), black 20%);
         padding: 0.5rem;
-        border: 1px solid var(--primary-color);
+        border: 0.1rem solid var(--primary-color);
         border-radius: 0.5rem;
         font-weight: bold;
         margin-inline-end: 1rem;
+        cursor: pointer;
+
     }
 }
 
@@ -127,12 +133,17 @@ footer {
     li {
         margin-inline-start: 1rem;
     }
+
+    p {
+        display: block;
+        padding-block-end: 0.5rem;
+    }
 }
 
 .image-grid {
     display: grid; 
     /* https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
-    grid-template-columns: repeat(3, minmax(20%, 1fr));  /* repeat 3 times, minmax 30% to 1 fraction of available space */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* repeat 3 times, minmax 30% to 1 fraction of available space */
     gap: 24px; /* space between items */
     width: 100%;
     margin: 0;
