@@ -2,7 +2,7 @@
 <html lang="sv">
     <head>
         <meta charset="UTF-8">
-        <title>FE25ht - Jim Nelin | Space Exploration - The Final Frontier</title>
+        <title>FE25ht - Jim Nelin | Space Exploration</title>
         <meta name="author" content="Jim Nelin">
         <meta name="description" content="Explore the wonders of the universe, from our solar system to distant galaxies.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -16,48 +16,39 @@
     </head>
     <body>
         <!-- Navbar at top -->
-        <header class="navbar flex-container">
+        <header class="flex-container">
             <!--- Logo -->
             <h2>Jim <span>FE25ht</span> Nelin</h2>
-            <nav class="navbar">
-                <ul>
+
+            <nav class="flex-container">
+                <ul role="list">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Missions</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <button class="btn">Click me!</button>
+            <button class="btn">En knapp i flexboxen</button>
         </header>
 
 
-        <!-- 
-            Ai-SUGGESTION: WHY Tabindex - Without it, clicking "Hoppa till innehåll" (Skip to content)
-            might scroll the page visually, but the keyboard focus would remain at the top.
-            Now, focus is programmatically moved to the main content, allowing users to immediately start interacting with the page content.
-        -->
-        <main class="main-content" tabindex="-1">
-            <!-- -->
-            <header>
-                <!-- Accessibility: Visible for screen reader only -->
-                <a href="#main-content" class="sr-only">Hoppa till innehåll</a>
-                <!-- AI-SUGGESTION: WCAG: Decorative image, empty alt attribute to reduce noise -->
+        <main class="main-content">
+            <header class="main-header">
                 <img class="main-image" src="https://picsum.photos/seed/technology7/1920/1080" alt="">
             </header>
 
-            <article>
+            <article class="content-article" aria-labelledby="article-title">
 
                 <header>
-                    <h1>Journey to the Stars</h1>
+                    <h1 id="article-title">Journey to the Stars</h1>
                 
-                    <p class="lead">
-                        Space exploration has always captivated the human imagination. From the first steps on the Moon to the robotic rovers on Mars.
-                    </p>
+                    <p>Space exploration has always captivated the human imagination. From the first steps on the Moon to the robotic rovers on Mars.</p>
                 </header>
                 
-                <section aria-labelledby="ingridients">
-                    <h2 id="ingridients">The Solar System</h2>
-                    <p>Our cosmic neighborhood:</p>
+                <section aria-labelledby="main-planets">
+                    <h2 id="main-planets">The Solar System</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nesciunt, nihil quisquam esse necessitatibus quia asperiores iste. Temporibus molestiae omnis modi beatae tempore dolorem magni eaque! Quibusdam porro illum dolores.
+                    Enim tempora quo amet corporis doloremque rem optio mollitia sunt natus blanditiis impedit ea quas praesentium ipsa id eius eos soluta nam, animi expedita quod magni? Aperiam ratione possimus dolorum.</p>
 
                     <ul>
                         <li><strong>The Sun:</strong> The star at the center of our Solar System. It is a nearly perfect sphere of hot plasma, heated to incandescence by nuclear fusion reactions in its core.</li>
@@ -69,8 +60,8 @@
                     </ul>
                 </section>
                 
-                <section aria-labelledby="howto">
-                    <h2 id="howto">Historic Milestones</h2>
+                <section aria-labelledby="main-milestones">
+                    <h2 id="main-milestones">Historic Milestones</h2>
                     <ol>
                         <li><strong>1957 - Sputnik 1:</strong> The Soviet Union launches the first artificial satellite into orbit, marking the beginning of the Space Age.</li>
                         <li><strong>1961 - Yuri Gagarin:</strong> Soviet cosmonaut Yuri Gagarin becomes the first human to journey into outer space, completing one orbit of Earth.</li>
@@ -81,44 +72,18 @@
                     </ol>
                 </section>
 
-                <section aria-labelledby="nutritioninfo">
-                    <table class="nutrition-table">
-                        <caption><h2 id="nutritioninfo">Planetary Data</h2> Comparison of terrestrial planets</caption>
+                <section aria-labelledby="image-title">
+                    <figure class="image-grid">
+                        <figcaption><h2 id="image-title">Galactic Gallery</h2></figcaption>
 
-                        <thead>
-                            <tr>
-                                <th scope="col">Planet</th>
-                                <th scope="col">Diameter (km)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Mercury</th>
-                                <td>4,879</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Venus</th>
-                                <td>12,104</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Earth</th>
-                                <td>12,742</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Mars</th>
-                                <td>6,779</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                
-                <section aria-labelledby="suggestions">
-                    <figure class="suggestions-grid">
-                        <figcaption><h2 id="suggestions">Galactic Gallery</h2></figcaption>
-                        <img src="https://picsum.photos/seed/c/800/600" alt="Nebula cloud">
-                        <img src="https://picsum.photos/seed/p/800/600" alt="Distant galaxy">
-                        <img src="https://picsum.photos/seed/space3/800/600" alt="Planet surface">
-                        <img src="https://picsum.photos/seed/space4/800/600" alt="Astronaut in space">
+                        <a href="subpage.html"><img src="https://picsum.photos/seed/1/800/600" alt="Image alt 1"></a>
+                        <a href="subpage.html"><img src="https://picsum.photos/seed/2/800/600" alt="Image alt 2"></a>
+                        <a href="subpage.html"><img src="https://picsum.photos/seed/3/800/600" alt="Image alt 3"></a>
+                        <a href="subpage.html"><img src="https://picsum.photos/seed/4/800/600" alt="Image alt 1"></a>
+                        <a href="subpage.html"><img src="https://picsum.photos/seed/5/800/600" alt="Image alt 2"></a>
+                        <a href="subpage.html"><img src="https://picsum.photos/seed/c/800/600" alt="Image alt C"></a>
+                        <a href="subpage.html"><img src="https://picsum.photos/seed/p/800/600" alt="Image alt P"></a>
+                        <a href="subpage.html"><img src="https://picsum.photos/seed/space3/800/600" alt="Image alt space3"></a>
                     </figure>
                 </section>
             </article>
