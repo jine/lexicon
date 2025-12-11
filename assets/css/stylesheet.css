@@ -140,6 +140,36 @@ footer {
     }
 }
 
+/* cards cards cards! */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* autofit minimum 250 to 1fr */
+    gap: 1.5rem;
+}
+
+.card {
+    display: grid;
+    border: 1px solid color-mix(in srgb, var(--primary-color), black 20%);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    h3 {
+        color: var(--primary-color);
+        margin-block-end: 1rem;
+    }
+
+    img {
+        width: 100%;
+        height: 200px;
+        border-radius: 0.5rem;;
+    }
+}
+
 .image-grid {
     display: grid; 
     /* https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
