@@ -140,6 +140,8 @@ footer {
     }
 }
 
+
+
 /* cards cards cards! */
 .card-container {
     display: grid;
@@ -170,6 +172,7 @@ footer {
     }
 }
 
+/* this is actually grid-style "cards", but images */
 .image-grid {
     display: grid; 
     /* https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
