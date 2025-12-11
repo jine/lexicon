@@ -42,9 +42,11 @@ footer {
 
 /* main image */
 .hero-image {
-    /* lets test full-width wrapping... */
+    /* lets test .fullwidth wrapping later ... */
     width: 100%;
+    max-height: 300px;
 }
+
 
 /* flex container for nav */
 .flex-container {
