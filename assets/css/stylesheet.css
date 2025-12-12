@@ -3,7 +3,7 @@
     HSL hue, saturation, and lightness.
     HSLA HSL with alpha channel (opacity)
     */
-    --primary-color: hsla(318, 100%, 10%, 0.8); /* a nice blue */
+    --primary-color: hsla(125, 100%, 43%, 0.8); /* a nice blue */
     --off-white-color: hsl(0, 0%, 100%);
     --line-height: 1.6;
 
@@ -62,7 +62,7 @@ footer {
     
     h2 {
         margin: 0;
-        padding: 0 1rem;
+        padding-inline-start: 1rem;
         font-size: 1.5rem;
         
         color: color-mix(in srgb, var(--primary-color), black 20%);
@@ -104,7 +104,7 @@ footer {
 
 /* main main-content, no more ids due to specificity, avoid id styling */
 .main-content {
-    box-sizing: border-box; /*include the padding and border in an element */
+    box-sizing: border-box; /* include the padding and border in an element */
     background: var(--off-white-color); /* changed from entirely white to something off-white */
     max-width: var(--max-width);
     margin: 0 auto;
@@ -153,6 +153,7 @@ footer {
     a {
         text-decoration: none;
         color: inherit;
+        display: grid;
     }
 
     h3 {
@@ -163,7 +164,8 @@ footer {
     img {
         width: 100%;
         max-height: 200px;
-        border-radius: 0.5rem;;
+        border-radius: 0.5rem;
+        order: -1;
     }
 
     /* ALRIGHT, lets.... subgrid tomorrow */
@@ -176,7 +178,7 @@ footer {
 .image-grid {
     display: grid; 
     /* https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
-    grid-template-columns: repeat(4, minmax(200px, 1fr));  /* repeat 3 times, minmax 30% to 1 fraction of available space */
+    grid-template-columns: repeat(2, minmax(200px, 1fr));  /* repeat 3 times, minmax 30% to 1 fraction of available space */
     gap: 24px; /* space between items */
     width: 100%;
     margin: 0;
