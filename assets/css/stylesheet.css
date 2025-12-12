@@ -47,6 +47,10 @@ footer {
     max-height: 300px;
 }
 
+.fullwidth {
+    
+}
+
 
 /* flex container for nav */
 .flex-container {
@@ -161,7 +165,7 @@ footer {
         border-radius: 0.5rem;;
     }
 
-    /* ALRIGHT, subgrid time */
+    /* ALRIGHT, lets.... subgrid tomorrow */
     p {
         margin-top: 1rem;
     }   
@@ -171,7 +175,7 @@ footer {
 .image-grid {
     display: grid; 
     /* https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* repeat 3 times, minmax 30% to 1 fraction of available space */
+    grid-template-columns: repeat(4, minmax(200px, 1fr));  /* repeat 3 times, minmax 30% to 1 fraction of available space */
     gap: 24px; /* space between items */
     width: 100%;
     margin: 0;
@@ -186,7 +190,7 @@ footer {
         height: 300px; /* fixed height for images */
 
         &:hover {
-            transform: scale(2);
+            transform: scale(1.2);
             transition: transform 0.3s ease;
         }
     }
