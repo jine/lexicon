@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <title>FE25ht - Jim Nelin | Space Exploration - The Final Frontier</title>
+        <meta name="author" content="Jim Nelin">
+        <meta name="description" content="Explore the wonders of the universe, from our solar system to distant galaxies.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/stylesheet.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+       
+        <!-- Navbar at top -->
+        <header class="flex-container">
+            <!--- Logo -->
+            <h2>Jim <span>FE25ht</span> Nelin</h2>
+
+            <nav class="flex-container">
+                <ul role="list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="contact.html">Reserve a seat</a></li>
+                </ul>
+            </nav>
+            <button class="btn" onclick="document.getElementById('booking-dialog').showModal()">Book a space shuttle!</button>
+        </header>
+
+        <main class="main-content">
+            <article>
+                <header>
+                    <h1>Fly to Space, Return Forever Changed</h1>
+                </header>
+                
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, mollitia a, assumenda non molestiae nihil, inventore ducimus perferendis dolores eius unde? Iusto debitis, labore voluptatem odio rem distinctio nemo molestias.</p>
+                <p>Quos nulla voluptatibus magnam! Quo distinctio doloremque, officia itaque quasi vitae eligendi nesciunt adipisci eum nam obcaecati, ut blanditiis sapiente amet iure et commodi suscipit facere nulla sequi placeat odio?</p>
+            
+                <button class="btn btn-primary" onclick="document.getElementById('booking-dialog').showModal()">Book now!</button>
+            </article>
+        </main>
+
+        <!-- CLOSEDBY: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog#comparison_of_different_closedby_behaviors -->
+        <dialog id="booking-dialog" class="booking-dialog" closedby="any">
+            <form action="#booking-result" method="POST">
+                <h2>Space booking</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure impedit modi, aliquam enim deleniti praesentium nobis, a quaerat illo aliquid fugit sapiente vitae, voluptatem itaque officiis molestiae voluptatum dolore delectus.</p>
+
+                <!-- Name and info for booking -->
+                <section class="form-info">
+                    <div>
+
+                        <label for="name">Name for booking</label>
+                        <input type="text" id="name" name="name" required autofocus placeholder="Your full name">
+                        <small class="help">Enter the full name for the booking.</small>
+                    </div>
+                    <div>
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <small class="help">Enter your phone number.</small>
+                    </div>
+                    <div>
+                        <label for="date">Date for booking</label>
+                        <input type="date" id="date" name="date" required>
+                        <small class="help">Choose the date you want to book the flight.</small>
+                    </div>
+                </section>
+
+                <!-- Fieldset with Radio buttons -->
+                <section class="form-preferences">
+                    <fieldset>
+                        <legend>Time for booking</legend>
+                        <div>
+                            <input type="radio" id="lunch" name="session" value="lunch">
+                            <label for="lunch">Morning flight (08:00 - 11:00)</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="dinner" name="session" value="evening">
+                            <label for="dinner">Evening flight (17:00 - 22:00)</label>
+                        </div>
+                    </fieldset>
+                </section>
+
+                <!-- Checkboxes -->
+                <section class="form-preferences">
+                    <fieldset>
+                        <legend>Travel preferences</legend>
+                        <div>
+                            <input type="checkbox" id="gluten" name="diet" value="weightlessness">
+                            <label for="gluten">Weightlessness</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="lactose" name="diet" value="spacewalk">
+                            <label for="lactose">Extravehicular Activity (Spacewalk)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="vegan" name="diet" value="microgravity">
+                            <label for="vegan">Microgravity experience</label>
+                        </div>
+                    </fieldset>
+                </section>
+
+                <!-- Range slider with datalist -->
+                <section class="form-partysize">
+                    <label for="party-size">Number of people (1-10)</label>
+                    <input type="range" id="party-size" name="party-size" min="1" max="10" step="1" list="party-markers">
+                    <datalist id="party-markers" class="party-markers">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                </section>
+
+                <!-- Input with aria-describedby -->
+                <section class="form-requests">
+                    <label for="special-requests">Other requests</label>
+                    <input type="text" id="special-requests" name="special-requests" aria-describedby="help-text">
+                    <small id="help-text" class="help">E.g. window seat, high chair, or any other space requests.</small>
+                </section>
+
+                <!-- Form buttons -->
+                <section class="form-buttons">
+                    <button class="btn btn-cancel" value="cancel" onclick="document.getElementById('booking-dialog').close()">Cancel</button>
+                    <input class="btn btn-primary" type="submit" value="Book now">
+                </section>
+            </form>
+        </dialog>
+
+        <footer>
+            <!-- Accessibility: Visible for screen reader only -->
+            <a href="#main-content" class="sr-only">Back to the top</a>
+        </footer>
+    </body>
+</html>

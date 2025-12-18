@@ -3,7 +3,7 @@
     HSL hue, saturation, and lightness.
     HSLA HSL with alpha channel (opacity)
     */
-    --primary-color: hsla(125, 100%, 43%, 0.8); /* a nice blue */
+    --primary-color: hsla(318, 100%, 10%, 0.8); /* a nice blue */
     --off-white-color: hsl(0, 0%, 100%);
     --line-height: 1.6;
 
@@ -14,6 +14,31 @@
     --image-columns: 5; /* number of columns in image grid */
 
     --img-width: calc(var(--max-width) / var(--image-columns) - 1.5rem); 
+
+    --clr-neutral-100: hsl(210, 40%, 98%);
+    --clr-neutral-400: hsl(210, 15%, 60%);
+    --clr-neutral-800: hsl(215, 25%, 27%);
+
+    --clr-primary-400: hsl(235, 80%, 60%);
+    --clr-primary-600: hsl(235, 70%, 45%);
+
+    --clr-surface: var(--clr-neutral-100);
+
+    --clr-accent: var(--clr-primary-400);
+    --clr-accent-hover: var(--clr-primary-600);
+
+    --fw-600: 600;
+
+    --fs-200: 0.8rem;
+    --fs-400: 1rem;
+
+    --gap-200: 0.5rem;
+    --gap-400: 1rem;
+    --gap-600: 2rem;
+
+    --br-400: 8px;
+
+    --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.08);
 
 }
 
@@ -47,22 +72,18 @@ footer {
     max-height: 300px;
 }
 
-.fullwidth {
-
-}
-
 
 /* flex container for nav */
 .flex-container {
-    display: flex; /* parent container */
-    align-items: center; /* vertically centers items */
-    justify-content: space-between; /* aligns the flexible container's items */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: var(--off-white-color);
     height: 4rem;
     
     h2 {
         margin: 0;
-        padding-inline-start: 1rem;
+        padding: 0 1rem;
         font-size: 1.5rem;
         
         color: color-mix(in srgb, var(--primary-color), black 20%);
@@ -74,9 +95,9 @@ footer {
     }
 
     ul {
-        display: flex; /* child display */
-        align-items: center; /* vertically centers items */
-        gap: 1rem; /* gap between */
+        display: flex;
+        align-items: center;
+        gap: 1rem;
         list-style: none;
         margin: 0;
         padding: 0.5rem 1rem;
@@ -104,7 +125,7 @@ footer {
 
 /* main main-content, no more ids due to specificity, avoid id styling */
 .main-content {
-    box-sizing: border-box; /* include the padding and border in an element */
+    box-sizing: border-box;
     background: var(--off-white-color); /* changed from entirely white to something off-white */
     max-width: var(--max-width);
     margin: 0 auto;
@@ -139,21 +160,19 @@ footer {
 /* cards cards cards! */
 .card-container {
     display: grid;
-    /* https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* autofit minimum 250 to 1fr */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* autofit minimum 250 to 1fr */
     gap: 1.5rem;
 }
 
 .card {
     display: grid;
-    border: 1px solid color-mix(in srgb, var(--primary-color), white 80%);
+    border: 1px solid color-mix(in srgb, var(--primary-color), black 20%);
     border-radius: 0.5rem;
     padding: 1rem;
     
     a {
         text-decoration: none;
         color: inherit;
-        display: grid;
     }
 
     h3 {
@@ -164,11 +183,10 @@ footer {
     img {
         width: 100%;
         max-height: 200px;
-        border-radius: 0.5rem;
-        order: -1;
+        border-radius: 0.5rem;;
     }
 
-    /* ALRIGHT, lets.... subgrid tomorrow */
+    /* ALRIGHT, subgrid time */
     p {
         margin-top: 1rem;
     }   
@@ -178,7 +196,7 @@ footer {
 .image-grid {
     display: grid; 
     /* https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
-    grid-template-columns: repeat(2, minmax(200px, 1fr));  /* repeat 3 times, minmax 30% to 1 fraction of available space */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* repeat 3 times, minmax 30% to 1 fraction of available space */
     gap: 24px; /* space between items */
     width: 100%;
     margin: 0;
@@ -193,7 +211,7 @@ footer {
         height: 300px; /* fixed height for images */
 
         &:hover {
-            transform: scale(1.2);
+            transform: scale(2);
             transition: transform 0.3s ease;
         }
     }
@@ -231,4 +249,188 @@ Google seems to suggest 767px is "most phones"...
     main {
         padding: 48px 16px;
     }
+}+
+
+
+
+
+
+/* actual stylings */
+
+/* focus styles for better accessibility when keyboard-navigating */
+:focus-visible {
+  outline: 2px solid var(--clr-accent);
+  outline-offset: 2px;
 }
+
+/* form container styling */
+.form-container {
+  background-color: var(--clr-surface); /* surface color */
+  padding: var(--gap-600); /* spacing inside the container */
+  border-radius: var(-0);
+BOOKING SHUTTLE FORM r(--shadow-card);
+}
+
+/* global container to center stuff on the page */
+.container {
+  display: grid; /* easiest center the form open button etc */
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* some default label & input styling */
+label {
+  display: block;
+  margin-bottom: var(--gap-200);
+  font-weight: var(--fw-600);
+  font-size: var(--fs-400);
+  margin-block-start: 0.4rem;
+}
+
+/* btn-styling */
+.btn {
+  cursor: pointer;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--br-400);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-600);
+  margin-block-start: 0.5rem;
+}
+
+/* blue button */
+.btn-primary {  
+  background-color: var(--clr-accent);
+  color: var(--clr-surface);
+
+  &:hover {
+    background-color: var(--clr-accent-hover);
+  }
+}
+
+/* cancel button variant */
+.btn-cancel {
+  background-color: var(--clr-neutral-400);
+  color: var(--clr-surface);
+
+  &:hover {
+    background-color: var(--clr-neutral-800);
+  }
+}
+
+input[type="text"],
+input[type="date"],
+input[type="range"],
+input[type="tel"],
+textarea,
+select {
+  padding: 0.4rem;
+  border: 1px solid var(--clr-neutral-800);
+  font-size: var(--fs-400);
+  border-radius: var(--br-400);
+  width: 80%; /* default width for inputs */
+}
+
+
+.booking-dialog {
+  border: 0; /* Remove default border */
+  border-radius: var(--br-400); /* rounded corners */
+  padding: 1rem; /* padding inside the dialog */
+  margin: auto; /* center the dialog vertically & horizontally */
+
+  /* limit paragraph width for better readability */
+  p {
+    max-width: 50ch;
+    padding-block-end: 0.5rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-block-end: 0.5rem;
+  }
+}
+
+/* form sections */
+section[class^="form-"] {
+  margin-block-end: var(--gap-400); /* spacing between sections */
+  padding-inline: 0.5rem;
+  
+  fieldset {
+    padding-inline: 1rem;
+  }
+
+  /* each label & field pair inside a section */
+  div {
+    margin-block: var(--gap-200); /* spacing between rows */
+  }
+
+  /* make all children inside fieldset (label & radio buttons etc) into flexboxes */
+  fieldset * {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-200);
+  }
+}
+
+/* help text style */
+.help {
+  font-size: var(--fs-200);
+  color: var(--clr-neutral-800);
+  display: block; /* ensure it starts on a new line */
+}
+
+/* datalist styling for range slider labels */
+.form-partysize datalist {
+  display: flex;
+  justify-content: space-between;
+  width: 80%; /* Matches the input width */
+  
+  /* font style for labels */
+  option {
+    font-size: var(--fs-200);
+    padding: 0;
+  }
+}
+
+
+
+
+/* from https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog */
+
+/* Closed state of the dialog   */
+dialog {
+  opacity: 0;
+}
+
+/* Open state of the dialog  */
+dialog:open {
+  opacity: 1;
+}
+
+/* Before open state  */
+/* Needs to be after the previous dialog:open rule to take effect, as the specificity is the same */
+@starting-style {
+  dialog:open {
+    opacity: 0;
+  }
+}
+
+/* Closed backdrop styles */
+dialog::backdrop {
+  background-color: transparent;
+}
+
+/* Open state backdrop styles  */
+dialog:open::backdrop {
+  background-color: rgb(0 0 0 / 65%);
+}
+
+/* This starting-style rule cannot be nested inside the above selector
+because the nesting selector cannot represent pseudo-elements. */
+@starting-style {
+  dialog:open::backdrop {
+    background-color: transparent;
+  }
+}
+
