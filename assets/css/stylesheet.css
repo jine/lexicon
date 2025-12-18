@@ -3,7 +3,7 @@
     HSL hue, saturation, and lightness.
     HSLA HSL with alpha channel (opacity)
     */
-    --primary-color: hsla(318, 100%, 10%, 0.8); /* a nice blue */
+    --primary-color: hsla(318, 100%, 10%, 0.8);
     --off-white-color: hsl(0, 0%, 100%);
     --line-height: 1.6;
 
@@ -15,10 +15,12 @@
 
     --img-width: calc(var(--max-width) / var(--image-columns) - 1.5rem); 
 
+
+    /* form-related colors and sizes */
     --clr-neutral-100: hsl(210, 40%, 98%);
     --clr-neutral-400: hsl(210, 15%, 60%);
     --clr-neutral-800: hsl(215, 25%, 27%);
-
+    
     --clr-primary-400: hsl(235, 80%, 60%);
     --clr-primary-600: hsl(235, 70%, 45%);
 
@@ -255,7 +257,7 @@ Google seems to suggest 767px is "most phones"...
 
 
 
-/* actual stylings */
+/* BOOKING SHUTTLE FORM STYLES BELOW */
 
 /* focus styles for better accessibility when keyboard-navigating */
 :focus-visible {
@@ -267,8 +269,8 @@ Google seems to suggest 767px is "most phones"...
 .form-container {
   background-color: var(--clr-surface); /* surface color */
   padding: var(--gap-600); /* spacing inside the container */
-  border-radius: var(-0);
-BOOKING SHUTTLE FORM r(--shadow-card);
+  border-radius: var(--br-400);
+  box-shadow: var(--shadow-card);
 }
 
 /* global container to center stuff on the page */
@@ -392,9 +394,6 @@ section[class^="form-"] {
     padding: 0;
   }
 }
-
-
-
 
 /* from https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog */
 
