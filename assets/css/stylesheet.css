@@ -350,10 +350,10 @@ select {
 /* each section contains divs and fieldsets */
 section[class^="form-"] {
   margin-block-end: var(--gap-400); /* spacing between sections */
-  padding-inline: 0.5rem;
+  padding-inline: var(--gap-200);
   
   fieldset {
-    padding-inline: 1rem;
+    padding-inline: var(--gap-400);
   }
 
   /* each label & field pair inside a section */
@@ -417,7 +417,7 @@ dialog::backdrop {
 
 /* Open state backdrop styles  */
 dialog:open::backdrop {
-  background-color: rgb(0 0 0 / 65%);
+  background-color: hsla(0, 0%, 0%, 0.65);
 }
 
 /* This starting-style rule cannot be nested inside the above selector
