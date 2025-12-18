@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en-US">
     <head>
         <meta charset="UTF-8">
         <title>FE25ht - Jim Nelin | Space Exploration - The Final Frontier</title>
@@ -55,12 +55,12 @@
                     <div>
 
                         <label for="name">Name for booking</label>
-                        <input type="text" id="name" name="name" required autofocus placeholder="Your full name">
+                        <input type="text" id="name" name="name" autocomplete="name" autofocus placeholder="Your full name">
                         <small class="help">Enter the full name for the booking.</small>
                     </div>
                     <div>
                         <label for="phone">Phone number</label>
-                        <input type="tel" id="phone" name="phone" required>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" required>
                         <small class="help">Enter your phone number.</small>
                     </div>
                     <div>
@@ -75,11 +75,11 @@
                     <fieldset>
                         <legend>Time for booking</legend>
                         <div>
-                            <input type="radio" id="morning" name="session" value="morning">
+                            <input type="radio" id="morning" name="timeslot" value="morning">
                             <label for="morning">Morning flight (08:00 - 11:00)</label>
                         </div>
                         <div>
-                            <input type="radio" id="evening" name="session" value="evening">
+                            <input type="radio" id="evening" name="timeslot" value="evening">
                             <label for="evening">Evening flight (17:00 - 22:00)</label>
                         </div>
                     </fieldset>
