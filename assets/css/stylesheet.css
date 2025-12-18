@@ -20,7 +20,7 @@
     --clr-neutral-100: hsl(210, 40%, 98%);
     --clr-neutral-400: hsl(210, 15%, 60%);
     --clr-neutral-800: hsl(215, 25%, 27%);
-    
+
     --clr-primary-400: hsl(235, 80%, 60%);
     --clr-primary-600: hsl(235, 70%, 45%);
 
@@ -255,9 +255,8 @@ Google seems to suggest 767px is "most phones"...
 
 
 
-
-
-/* BOOKING SHUTTLE FORM STYLES BELOW */
+/*************************************************/
+/*    FROM / BOOKING SHUTTLE FORM STYLES BELOW   */
 
 /* focus styles for better accessibility when keyboard-navigating */
 :focus-visible {
@@ -271,13 +270,6 @@ Google seems to suggest 767px is "most phones"...
   padding: var(--gap-600); /* spacing inside the container */
   border-radius: var(--br-400);
   box-shadow: var(--shadow-card);
-}
-
-/* global container to center stuff on the page */
-.container {
-  display: grid; /* easiest center the form open button etc */
-  justify-content: center;
-  align-items: flex-start;
 }
 
 /* some default label & input styling */
@@ -320,6 +312,7 @@ label {
   }
 }
 
+/* input field styling */
 input[type="text"],
 input[type="date"],
 input[type="range"],
@@ -353,7 +346,8 @@ select {
   }
 }
 
-/* form sections */
+/* The booking form is divided into multiple sections */
+/* each section contains divs and fieldsets */
 section[class^="form-"] {
   margin-block-end: var(--gap-400); /* spacing between sections */
   padding-inline: 0.5rem;
@@ -395,6 +389,7 @@ section[class^="form-"] {
   }
 }
 
+/* Dialog element styling  */
 /* from https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog */
 
 /* Closed state of the dialog   */
